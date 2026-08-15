@@ -1,0 +1,185 @@
+<<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIGUAPET</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <header>
+    <div class="nav-container">
+      <div class="logo-area">
+        <h1><i class="fa-solid fa-paw logo-paw"></i>
+            <img src="assets/Logo.png" alt="Logo biguapet" class="logo-img">
+            BIGUAPET
+        </h1>
+        <p>Vivendo com alegria e diversão com seus amigos</p>
+      </div>
+      <nav class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner Principal -->
+  <section class="principal">
+    <div class="principal-card">
+      <div class="principal-content">
+        <h2>Bem-vindo ao Biguapet</h2>
+        <p>Proporcionamos momentos inesquecíveis, cuidado e o carinho que seu melhor amigo merece há mais de 30 anos.</p>
+      </div>
+      <div class="principal-image">
+        <img src="assets/logo_bem_vindo.jpg" alt="Filhotes">
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÕES VERTICAIS (Uma abaixo da outra) -->
+  <main class="sections-cards">
+
+    <!-- SEÇÃO 1: SOBRE NÓS -->
+    <section class="page-section" id="sobre">
+      <div class="section-container">
+        <div class="section-image">
+          <img src="assets/sobre_nos.jpg" alt="Sobre Nós">
+        </div>
+        <div class="section-info">
+          <span class="badge">Conheça nossa história</span>
+          <h2>Sobre Nós</h2>
+          <p>BiguaPet tem como missão criar um ambiente saudável, seguro e acolhedor para o seu pet mostrar toda a sua alegria.</p>
+          <p>Nossa história começa Fevereiro de 1991 no bairro Vendaval, com atendimentos a domicílio pelos bairros vizinhos. Com a alta demanda e aumento da carteira de clientes abrimos a nossa loja em Julho de 1992, estabelecendo-se no endereço atual.</p>
+          <p>Em 2023, modernizamos nossas estruturas, iniciando-se assim, os atendimentos de hospedagens e creche, sendo reconhecido por toda região de Biguaçu.</p>
+          
+          <!-- Cards da seção Sobre -->
+          <div class="feature-cards">
+            <div class="feature-card">
+              <i class="fa-solid fa-heart-pulse card-icon"></i>
+              <h3>+80.000</h3>
+              <p>Pets Atendidos</p>
+            </div>
+            <div class="feature-card">
+              <i class="fa-solid fa-award card-icon"></i>
+              <h3>35 Anos</h3>
+              <p>de Experiência</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: SERVIÇOS -->
+    <section class="page-section" id="servicos">
+      <div class="section-container reverse">
+        <div class="section-image">
+          <img src="assets/servicos.jpg" alt="Nossos Serviços">
+        </div>
+        <div class="section-info">
+          <span class="badge">O que fazemos</span>
+          <h2>Nossos Serviços</h2>
+          <p>Oferecemos hospedagem, creche, passeios guiados e banho & tosa com profissionais apaixonados por animais.</p>
+
+          <!-- Cards da seção Serviços -->
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-header">
+                <i class="fa-solid fa-hotel service-icon"></i>
+              </div>
+              <h3>Hospedagem & Creche</h3>
+              <p>Ambiente amplo, monitorado e super seguro para o seu pet descansar ou socializar durante o dia.</p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-header">
+                <i class="fa-solid fa-shower service-icon"></i>
+              </div>
+              <h3>Banho & Tosa</h3>
+              <p>Produtos de alta qualidade e profissionais carinhosos para manter a higiene e a saúde da pelagem.</p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-header">
+                <i class="fa-solid fa-dog service-icon"></i>
+              </div>
+              <h3>Passeios Guiados</h3>
+              <p>Atividades físicas adaptadas para gastar energia e garantir o bem-estar mental do seu pet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: CONTATO -->
+    <section class="page-section" id="contato">
+      <div class="section-container">
+        <div class="section-image">
+          <img src="assets/contatos.jpg" alt="Contato">
+        </div>
+        <div class="section-info">
+          <span class="badge">Fale Conosco</span>
+          <h2>Contato</h2>
+          <p>Entre em contato conosco para agendar uma visita ou tirar qualquer dúvida sobre nossos planos e atendimento.</p>
+
+          <!-- Formulário com validação via JS -->
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nome">Nome *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar você e seu pet?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            <div id="feedback" class="feedback-msg"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4><i class="fa-solid fa-location-dot"></i> Endereço</h4>
+        <p>Rua dos Pets, 123 - Centro</p>
+        <p>Biguaçu - SC, 88999-123</p>
+      </div>
+
+      <div class="footer-section footer-brand">
+        <i class="fa-solid fa-paw footer-paw-icon"></i>
+        <img src="assets/Logo.png" alt="Logo biguapet" class="logo-img">
+        <h3>BIGUAPET</h3>
+        <p>Cuidando do seu pet com amor</p>
+      </div>
+
+      <div class="footer-section">
+        <h4><i class="fa-regular fa-clock"></i> Horário de Funcionamento</h4>
+        <p><strong>Seg - Sex:</strong> 08:00h às 19:00h</p>
+        <p><strong>Sábado:</strong> 08:00h às 14:00h</p>
+        <p><strong>Domingo e Feriados:</strong> Fechado</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; BIGUAPET. Todos os direitos reservados. <i class="fa-solid fa-paw"></i></p>
+    </div>
+  </footer>
+
+  <!-- Script JS Separado -->
+  <script src="script.js"></script>
+</body>
+</html>
